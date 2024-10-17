@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Character Counter</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!-- Message Box -->
+    <div class="container">
+        <h2>Message Box</h2>
+        <p class="instructions">You can type up to 200 characters:</p>
+        <textarea id="message" placeholder="Start typing your message here..."></textarea>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="counter-wrapper">
+            <div class="counter" id="charCount">0/200 characters</div>
+        </div>
+        <div class="char-details">
+            <h3>Character Details</h3>
+            <ul id="charList"></ul>
+        </div>
+        <div class="warning" id="warningMsg">Character limit exceeded!</div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
